@@ -1,0 +1,499 @@
+/*@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}*/
+html{
+	background-image: url('cascadavirgen.jpg'); /*'bake1.JPG'*/ 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;/* 1600px;*/
+	/*-webkit-background-size: 100% auto; 
+	-moz-background-size: 100% auto; 
+	background-size: 100% auto;*/
+	background-color: darkgrey;
+	background-attachment: fixed; /*scroll;*/
+	min-width:100%;
+	min-height:100%;
+	left:0;
+	/*margin: 0px;
+	width: 100%;
+	height: auto;
+	position: absolute;*/
+}
+body{
+	margin: 0px;
+	width: 100%;
+}
+/*html,body{
+	height:100%;
+	width:100%;
+} */
+
+ #titlebox{
+     	/* position: relative; */
+     	width: 1000px;	
+    	
+     	height: 30px;
+     	left: -140px;
+     	top: -60px;
+     	/* margin: 20px auto 0 auto; */ /*80% (top)*/
+    	
+     	/* z-index: 0; */
+    	
+     	/* text-align: center; */
+}
+
+
+       h1 {
+   font-family: Caudex, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	
+	font-weight: 500;
+	
+   font-size: 75px;
+	text-align: center;
+	margin: 0 0 0 0;
+	text-shadow: 0 0 10px rgb(1,1,1);   /*0px 0px 17px rgb(7, 28, 110); /* blue shadow*/
+	
+   color: rgb(216, 192, 15); /* yellow title blue font was #1E42CF;*/
+	
+   position: absolute;
+	
+   /* top:60%; */
+   left:  0;
+}
+#tabsline {
+    border: 0;
+    height: 1px;
+    margin: 0 auto;
+    z-index:2;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+/*#pastryline2 {
+	color: darkgray;
+    border: 0;
+    
+	height: 1px;
+    margin: 0 auto;
+    z-index:2;
+    
+	z-index: 1;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}*/
+#line{ 
+	display: block;
+	position: relative;
+	left: 50px;
+	top: 50px;
+	width: 700px;
+	z-index:2;
+}
+#buttons
+	{	
+	position: relative;
+	width: 1000px;
+  height: 50px;
+	padding: 0;
+	list-style-type: none;
+  
+	margin: 60px auto 0 auto;
+  /*bottom: 25px;*/
+	text-align: center;
+	font-size: 34px;
+	
+	text-shadow: 2px 2px -1px darkgray;/* was 40px for third*/
+	font-family:Caudex, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	z-index: 2;
+	background-color: rgba(250, 252, 248, 0.9);
+}
+        a{
+		color: #CF1E1E; /*red¡ old color#fffcfc; */
+		text-decoration:none;
+	}
+
+        #centerme {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+}
+                #centerme div{
+	/* display: inline; */
+  position: absolute;
+	margin: 0 60px;
+}
+
+         #locationtab{
+	right: -125px;
+}
+         #roomtab{
+	left: 385px;
+}
+
+
+
+
+
+.contentbox{
+
+	/*font-family: 'Open Sans Condensed',"Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
+	color: black;
+	/*box-shadow: 0px 0px 30px -5px black inset;*/
+	width: 1000px;
+	height: 1000px;
+	margin: 20px auto 0 auto;
+	position:relative;
+	/*display: block;	*/
+	/*background:#fff;*/
+	/* rounded corners? 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;  future proofing 
+	-khtml-border-radius: 5px; for old Konqueror browsers 
+	*/
+  z-index: 0;
+	
+}
+         #centerme2{
+      position:relative;
+      width: 1000px;
+      margin:0 auto;
+      }
+
+
+
+
+#ourstorybox{
+
+	/*background-color: rgba(32, 32, 32, 0.9);*/
+}
+
+/*.centered{
+	width: 800px;
+	margin: 0 auto;
+	positions: relative;
+}*/
+.slideshow
+{ 	
+	/* background-color: black; */
+	box-shadow:  -5px 5px 25px 1px black; 
+	width: 850px;
+	height: 500px;
+  background-color: rgba(250, 252, 248, 0.9);
+
+	margin: 30px auto;
+	position: relative;
+/*	background-image: url('hotkorambiedes.jpg'); /*korambiedes.jpg');
+ *	background-repeat: no-repeat;
+ *	background-size: contain;
+	margin: auto;
+	
+	top: 54px;
+	margin-bottom: 0;*/
+	z-index: 0;
+
+}
+
+
+      .images{
+	width: 800px;
+	height: 450px;
+	box-shadow: -1px -1px 25px 0px black;
+	margin: 25px;
+	z-index: 1;
+}
+#TA_rated654{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+}
+
+#dotbox{
+	display: block;
+	position: absolute;
+	top: 479px;
+	left: 210px;
+	
+	width:  400px;
+	height: 15px;
+	margin: 0 auto;
+	z-index: 2;
+	text-align: center;
+}
+      #dotbox a{
+	margin: 0 10px;
+	color: darkgray;
+	background-color: darkgray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+}
+
+
+
+#menubox{
+
+ /*	background-color: rgba(250, 252, 248, 0.9);*/
+}
+#roomtitle {
+	font-family: 'Caudex', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: 500;
+	font-size: 22px;
+	text-align: center;
+  background-color: rgba(100,100,100,.9);
+ 	/*-moz-border-radius: 5px 10px 10px 5px;
+	-webkit-border-radius: 5px 10px 10px 5px;
+	border-radius: 5px 10px 10px 5px;
+	-khtml-border-radius: 5px 10px 10px 5px;*/
+	color: rgb(216, 192, 15) ; /* #1E42CF;/*#3d63b8;*/
+	margin: 0px 75px -20px 60px;
+	/* text-shadow: 1px 89px 10px rgb(0, 15, 192); *//
+	 z-index:inherit;
+  
+  width: 880px;
+  
+}
+     /* #roomtitle h2{
+  margin: 0 10px;
+}*/
+
+#roomlist{
+	color: rgb(228, 228, 228);
+	
+	text-decoration: none;
+ 	
+	/*padding: 0px 13px 50px 1px;*/
+
+	-moz-border-radius: 5px 10px 10px 5px;
+	-webkit-border-radius: 5px 10px 10px 5px;
+	border-radius: 5px 10px 10px 5px;
+	-khtml-border-radius: 5px 10px 10px 5px;
+	 z-index:inherit;
+  text-align: center;
+	display: inline-block;
+	position: relative;
+	float: left;
+	font-size: 15px;
+	/*box-shadow: 0px 0px 30px -11px inset;
+  
+	height: 450px;*/
+	width: 240px;
+ 	
+	margin: 0px 10px 0 60px;
+}
+    /*    #roomlist a{
+  color:  rgb(228, 228, 228);
+}*/
+
+
+
+        .roomdescription{
+	display: block;
+	position: relative;
+	text-align: left;
+  width: 240px;
+ 
+	margin: 0px 0 10px 0px;
+	color: rgb(88,151,66); /*green rgb(216, 192, 15) yellow; /*rgb(228, 228, 228); /*#fffcfc; /* white for font*/
+	font-family: 'Caudex', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 19px;
+  font-weight: 800;
+	z-index:8;
+  
+	background-color: #fff;/* white; /*#CF1E1E;*/
+  /*-moz-border-radius: 5px 10px 5px 10px;
+	-webkit-border-radius:  5px 10px 5px 10px;
+	border-radius: 5px 10px 5px 10px;  
+	-khtml-border-radius: 5px 10px 5px 10px;*/
+  
+	box-shadow: 1px 1px -1px 0px black;
+}
+       .roomdescription a{
+  color:  black;/*rgb(228, 228, 228);*/
+  text-decoration: none;
+ 
+}   
+
+        .roomdescription p{
+   margin: 10px 10px 5px 10px;
+}
+   
+.roomdescription button{
+   background-color: rgba(88,151,66,.7); /* green rgba(216, 192, 15,.5); /*transparent;*/
+   font-family: 'Caudex', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: 500;
+  font-size: 15px;
+  
+   margin-left: 33px;
+  
+   /* margin-right: auto; */
+   margin-bottom: 5px;
+   padding: 2px;
+   /* position: relative; */
+}
+
+
+  #TA_selfserveprop672{
+
+	display:block;
+	position: relative;
+	margin: 5px 0px 0px 0;
+	float:left;
+}
+
+ 
+
+.roomlist{
+	height: 40px;
+	width: 250px;
+
+	margin:  10px 0;
+	z-index:inherit;
+}
+
+#roomitems{
+	display:inline-block;
+  position: relative;
+  float:left;
+	margin-left: 5px;	
+	margin-top: 9px;
+	width: 365px;
+	height: 305px;
+	z-index:inherit;
+	
+}
+        
+.item{ 
+	display: inline-block;
+	position: absolute;
+	/*padding: 5px;*/
+	width:630px;
+		
+	height: 420px;
+	/*top: 181px;
+	right: 603px;*/
+	background-color: rgba(100,100,100,.5); /* grey rgba(88,151,66,.8); /* green white; /*rgb(216, 192, 15);*/
+	/*-moz-border-radius: 5px 10px 5px 10px;
+	-webkit-border-radius:  5px 10px 5px 10px;
+	border-radius: 5px 10px 5px 10px;  
+	-khtml-border-radius: 5px 10px 5px 10px;*/
+	z-index:inherit;
+}
+.roomimage{
+	display: inline;
+	position: relative;
+	margin: 8px 0 0 15px;
+/*	width: 550px;
+	height: 365px;*/
+	top: 8px;
+	 z-index:inherit;
+}
+       .roomimage img{
+  width: 600px;
+  height: 400px;
+  box-shadow: -1px -1px 25px 0px black;
+  }
+
+#infobox{
+      /*	background-color: rgba(32, 32, 32, 0.9);*/
+}
+#infobar{
+
+	 font-family: ' Caudex', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	margin-top: 20px;
+  width:600px;
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	margin: 30px auto 0 auto;
+	color: white;
+	padding: 2px 4px;
+	background-color: rgba(88,151,66,.9); /* green #CF1E1E; red /* info blue #3d63b8; */
+
+}
+     #infobar a{
+   color:white;
+}
+#map{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+  height:400px;
+	display: inline-block;
+	position:relative;
+  
+	}
+       #centerme3{
+  height:400px;
+  width: 600px;
+  margin: 0 200px;
+  position: relative;
+  }
+             #centerme3 p{
+   text-align:center;
+   margin-top:-50px;
+   font-size: 15px;
+   font-family: ' Caudex', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+   }
+
+
+
+#churchlink li {
+	margin: 0 40px;
+	display: inline;
+}
+
+#churchlink a {
+	color: #f4f4f4;
+	
+}
+#churchlink{
+	text-align: right;
+	margin: 0px;
+	font-size: 18px;
+
+	padding:0px;
+/*	text-shadow: 0px 0px 1290px;
+*/
+} 
+
+#facebook {
+	position: fixed;
+  z-index:0;
+	bottom: 22px;
+	right: 0;
+}
+
+#footer	{
+	
+	bottom: 0;
+	width: inherit;/*1600px*/
+	height: 27px;
+	/* for sticking to bottom*/
+	position: fixed;
+	font-family: 'Open Sans Condensed', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+
+	text-align: right;
+	background-color: grey;
+	color: white;/* #f9f9f9;*/
+	/* inherited already font-family: "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
+
+
+}
+
+
